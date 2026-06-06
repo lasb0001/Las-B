@@ -1,148 +1,438 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Las B Official Website. Nigerian rap artist and independent music creator. Listen to Perfection and Emotional.">
-<title>Las B Official | Nigerian Rap Artist</title>
-<style>
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Las B Official Website. Nigerian rap artist and independent music creator. Listen to Perfection and Emotional.">
+  <title>Las B Official | Nigerian Rap Artist</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body{
-background:#0d0d0d;
-color:white;
-line-height:1.6;
-}
+    :root {
+      --bg: #06070a;
+      --panel: #10141b;
+      --text: #f7f8fb;
+      --muted: #b7c0ce;
+      --line: rgba(255, 255, 255, 0.14);
+      --ice: #8fd5ff;
+      --accent: #ffcc47;
+      --hot: #ff4f76;
+    }
 
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("-ex37zr.jpg");
-background-size:cover;
-background-position:center;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-  .hero h1{
-    font-size:4rem;
-    letter-spacing:4px;
-    color:white;
-}
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
 
-.hero p{
-    color:white;
-    font-size:1.2rem;
-    font-weight:bold;
-}
+    a {
+      color: inherit;
+    }
 
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 30px;
-background:#00aaff;
-color:white;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-}
+    .site-shell {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 204, 71, 0.14), transparent 24rem),
+        radial-gradient(circle at 82% 72%, rgba(255, 79, 118, 0.12), transparent 26rem),
+        var(--bg);
+    }
 
-section{
-padding:70px 20px;
-max-width:1000px;
-margin:auto;
-}
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem clamp(1rem, 5vw, 4rem);
+      background: linear-gradient(to bottom, rgba(6, 7, 10, 0.88), rgba(6, 7, 10, 0));
+    }
 
-h2{
-margin-bottom:20px;
-color:#00aaff;
-}
+    .brand {
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
 
-.music-card{
-    background:#111;
-    color:white;
-}
-.music-card h3{
-    color:white;
-}
-  .music-card p{
-    color:#ddd;
-  }
-  body{
-    background:#0d0d0d;
-    color:white;
-  }
-  section{
-    background:#0d0d0d;
-  }
-  
-.socials{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-margin-top:20px;
-}
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
 
-.socials a{
-background:#00aaff;
-padding:12px 20px;
-border-radius:25px;
-text-decoration:none;
-color:white;
-}
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
 
-footer{
-text-align:center;
-padding:30px;
-background:#111;
-color:#888;
-}
-</style></head><body><div class="hero">
-<h1>LAS B</h1>
-<p>Nigerian Rap Artist • Independent Music Creator</p><a href="https://audiomack.com/lasb0001" target="_blank" class="btn">
-Listen on Audiomack
-</a>
-</div><section>
-<h2>About Las B</h2><p>
-Las B is a Nigerian independent rap artist known for blending emotion,
-ambition, and real-life experiences into his music. Through authentic
-storytelling and energetic delivery, Las B creates songs that connect
-with listeners on a personal level.His releases, including Perfection and Emotional, showcase his
-versatility and dedication to making music that inspires, motivates,
-and entertains. As an emerging artist, Las B continues to build his
-audience while pushing his sound to new heights.
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      display: grid;
+      align-items: end;
+      padding: 7rem clamp(1rem, 5vw, 4rem) 4rem;
+      isolation: isolate;
+    }
 
-</p>
-</section><section>
-<h2>Latest Music</h2><div class="music-card">
-<h3>🎵 Perfection</h3>
-<p>Available now on Audiomack.</p>
-</div><div class="music-card">
-<h3>🎵 Emotional</h3>
-<p>Available now on Audiomack.</p>
-</div><div class="music-card">
-<h3>🎧 Official Audiomack</h3>
-<p>
-<a href="https://audiomack.com/lasb0001" target="_blank" style="color:#00aaff;">
-Visit My Audiomack Profile
-</a>
-</p>
-</div>
-</section><section>
-<h2>Connect With Me</h2><div class="socials"><a href="https://www.tiktok.com/@lasb0001?_r=1&_t=ZS-96z5CnSFTjJ" target="_blank">
-TikTok
-</a><a href="https://audiomack.com/lasb0001" target="_blank">
-Audiomack
-</a><a href="https://www.snapchat.com/add/lasb0001?share_id=33yEgWjcP04&locale=en-GB" target="_blank">
-Snapchat
-</a></div>
-</section><footer>
-© 2026 Las B Official. All Rights Reserved.
-</footer></body>
-  </html>
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(6, 7, 10, 0.92) 0%, rgba(6, 7, 10, 0.58) 42%, rgba(6, 7, 10, 0.1) 100%),
+        linear-gradient(0deg, rgba(6, 7, 10, 1) 0%, rgba(6, 7, 10, 0.12) 38%),
+        url("-ex37zr.jpg");
+      background-size: cover;
+      background-position: 58% center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 100% 9px;
+      mix-blend-mode: screen;
+      opacity: 0.18;
+    }
+
+    .hero-content {
+      width: min(760px, 100%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 2.6rem;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h1 {
+      max-width: 10ch;
+      font-size: clamp(4.4rem, 14vw, 10.5rem);
+      line-height: 0.84;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .hero-copy {
+      max-width: 620px;
+      margin-top: 1.3rem;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.8rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.92rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button.primary {
+      background: var(--text);
+      color: #07080c;
+    }
+
+    .button.secondary {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      backdrop-filter: blur(12px);
+    }
+
+    .section {
+      padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 4rem);
+    }
+
+    .section-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.75fr);
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .lead {
+      margin-top: 1.2rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.7vw, 1.15rem);
+    }
+
+    .artist-note {
+      border-left: 3px solid var(--hot);
+      padding-left: 1rem;
+      color: rgba(255, 255, 255, 0.84);
+      font-weight: 700;
+    }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .music-card,
+    .social-card {
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.1rem;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
+      text-decoration: none;
+    }
+
+    .music-card span,
+    .social-card span {
+      color: var(--ice);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .music-card h3,
+    .social-card h3 {
+      margin-top: 0.6rem;
+      font-size: 1.45rem;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .music-card p,
+    .social-card p {
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .social-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem clamp(1rem, 5vw, 4rem);
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 0.55rem;
+      }
+
+      .nav-links a {
+        font-size: 0.74rem;
+      }
+
+      .hero {
+        min-height: 88svh;
+        padding-top: 6rem;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(0deg, rgba(6, 7, 10, 1) 0%, rgba(6, 7, 10, 0.18) 48%),
+          linear-gradient(90deg, rgba(6, 7, 10, 0.78), rgba(6, 7, 10, 0.08)),
+          url("-ex37zr.jpg");
+        background-size: cover;
+        background-position: 62% center;
+      }
+
+      .split,
+      .music-grid,
+      .social-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .music-card,
+      .social-card {
+        min-height: 150px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .nav-links a[href="#about"] {
+        display: none;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: clamp(4rem, 22vw, 6.4rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="site-shell">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#">Las B</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#connect">Connect</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Nigerian rap artist</p>
+        <h1>Las B</h1>
+        <p class="hero-copy">Independent rap energy, emotional storytelling, and a sound built from ambition, pressure, and real life.</p>
+        <div class="actions">
+          <a class="button primary" href="https://audiomack.com/lasb0001" target="_blank" rel="noopener">Listen on Audiomack</a>
+          <a class="button secondary" href="#music">Latest releases</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="about">
+      <div class="section-inner split">
+        <div>
+          <p class="eyebrow">The story</p>
+          <h2>Built on emotion and hunger.</h2>
+        </div>
+        <p class="artist-note">
+          Las B is a Nigerian independent rap artist blending emotion, ambition, and real-life experience into music that connects directly with listeners. Releases like Perfection and Emotional show his range, confidence, and commitment to pushing his sound forward.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="music">
+      <div class="section-inner">
+        <p class="eyebrow">Latest music</p>
+        <h2>Stream the sound.</h2>
+        <div class="music-grid">
+          <a class="music-card" href="https://audiomack.com/lasb0001" target="_blank" rel="noopener">
+            <div>
+              <span>Single</span>
+              <h3>Perfection</h3>
+            </div>
+            <p>Available now on Audiomack.</p>
+          </a>
+          <a class="music-card" href="https://audiomack.com/lasb0001" target="_blank" rel="noopener">
+            <div>
+              <span>Single</span>
+              <h3>Emotional</h3>
+            </div>
+            <p>Available now on Audiomack.</p>
+          </a>
+          <a class="music-card" href="https://audiomack.com/lasb0001" target="_blank" rel="noopener">
+            <div>
+              <span>Profile</span>
+              <h3>Audiomack</h3>
+            </div>
+            <p>Follow Las B and catch every release.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="connect">
+      <div class="section-inner">
+        <p class="eyebrow">Connect</p>
+        <h2>Follow Las B.</h2>
+        <div class="social-strip">
+          <a class="social-card" href="https://www.tiktok.com/@lasb0001?_r=1&_t=ZS-96z5CnSFTjJ" target="_blank" rel="noopener">
+            <span>Social</span>
+            <h3>TikTok</h3>
+            <p>@lasb0001</p>
+          </a>
+          <a class="social-card" href="https://audiomack.com/lasb0001" target="_blank" rel="noopener">
+            <span>Music</span>
+            <h3>Audiomack</h3>
+            <p>lasb0001</p>
+          </a>
+          <a class="social-card" href="https://www.snapchat.com/add/lasb0001?share_id=33yEgWjcP04&locale=en-GB" target="_blank" rel="noopener">
+            <span>Social</span>
+            <h3>Snapchat</h3>
+            <p>lasb0001</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Las B Official. All Rights Reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
